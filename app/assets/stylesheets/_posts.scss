@@ -1,0 +1,134 @@
+.posts.index {
+  .card {
+    border: none;
+    border-radius: 0;
+    // border-bottom: 1px solid #181818; gach duoi 
+    height: 400px;
+    margin-bottom: 20px;
+    background-color: white;
+    .card-topper {
+      height: 200px;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+    .card-block {
+      padding: 10px;
+      a:hover, a:focus {
+        text-decoration: none;
+      }
+      .card-title {
+        font-size: 28px;
+        margin-bottom: 0;
+        a {
+          color: black;
+          text-decoration: none;
+        }
+      }
+      .tags {
+        margin-bottom: 0;
+        a {
+        font-family:  'Montserrat', sans-serif;
+        font-size: 13px;
+        }
+      }
+
+      .card-text {
+        font-size: 20px;
+        color: rgba(0,0,0,.54)!important;
+        font-weight: normal;
+      }
+      .author-bio {
+        background-color: white;
+        border-radius: 10px;
+        margin: 0;
+        .author-img {
+          width: 15%;
+          float: left;
+        }
+        img {
+          height: 40px;
+          border-radius: 50%;
+        }
+        img, h4 {
+          margin-bottom: 5px;
+        }
+        h4 {
+          font-weight: bold;
+          font-size: 15px
+        }
+        h5 {
+          font-weight: 400;          
+        }
+        .author-published-date {
+          font-size: 13px;
+          color: #787878;
+          font-weight: 300;
+          margin-top: 0.3rem;
+          margin-bottom: 0.3rem;
+        }
+      }
+    }
+  }
+}
+
+.posts.edit, .posts.new{
+  .card {
+    .card-title {
+      font-size: 25px;
+    }
+    .list-group-item {
+      padding: 10px;
+      // border-left: 0;
+      input[type='text'], textarea {
+        font-size: 15px;
+        background-color: $light-gray;
+      }
+      textarea{
+        height: 100px;
+      }
+      // &:last-child {
+      //   background-color: $light-gray;
+      // }
+    }
+  }
+}
+
+.posts.show {
+  .author-bio {
+    background-color: white;
+    padding: 15px 45px;
+    border-radius: 10px;
+    margin: 30px 0;
+    img {
+      border-radius: 50%;
+    }
+    img, h4 {
+      margin-bottom: 10px;
+    }
+    h4 {
+      font-weight: bold;
+      font-size: 20px
+    }
+  }
+}
+
+@media screen and (min-width: 34em) {
+  .posts.index .card {
+    height: 440px;
+  }
+}
+
+/* Medium. Above 48em (768px) */
+@media screen and (min-width: 48em) {
+  .posts.index .card {
+    height: 420px;
+  }
+}
+
+/* Extra large. Above 75em (1200px) */
+@media screen and (min-width: 75em) {
+  .posts.index .card {
+    height: 415px;
+  }
+}

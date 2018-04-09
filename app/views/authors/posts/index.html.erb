@@ -1,0 +1,18 @@
+<% provide(:page_title, "All Posts") %>
+<% provide(:author, 'active') %>
+
+<div class="row">
+  <div>
+    <%= link_to 'New post', new_authors_post_path, class: 'btn btn-primary btn-lg' %>
+  </div>
+  <br>
+	<table class="table table-striped">
+    <tr>
+      <th colspan = "4">Title</th>
+    </tr>
+    <%= render @posts %>
+    <div class="apple_pagination">
+      <%= will_paginate @posts, container: false %>
+    </div>
+  </table>
+</div>

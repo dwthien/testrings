@@ -1,0 +1,13 @@
+<% provide(:page_title, "All Posts") %>
+<% provide(:blog_active, 'active') %>
+
+<div class="row">
+  <div class="col-lg-8">
+    <%= render @posts %>
+    <div class="apple_pagination col-lg-12">
+      <%= will_paginate @posts, container: false %>
+    </div>
+  </div>
+  <div class="col-lg-4"></div>
+</div>
+

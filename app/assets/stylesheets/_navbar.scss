@@ -1,0 +1,213 @@
+.navbar-top {
+  margin-bottom: 0;
+  .icon-blog {
+    padding: 9px;
+  }
+  .author-nav {
+    img {
+      height: 40px;
+      weight: 40px;
+      border-radius: 50%;
+      border: 2px solid #00BFA5;
+    }
+  }
+  .dropdown-menu {
+    li > a:hover {
+      background-color: #FFF !important;
+      color: #00BFA5;
+    }
+  }
+}
+
+.navbar-top.in-home {
+  height: 60px;
+  background-color: #FFFFFF;
+  .sign-in {
+    margin-top: 10px;
+    .nav-link {
+      padding: 9px;
+      color: #074;
+    }
+    .nav-link:hover, .nav-link:focus {
+      color: #030303FF !important;
+      background-color:#FFF !important;
+      text-decoration: none;
+    }
+  }
+  .author-nav {
+    .nav-link {
+      background-color:#FFF !important;
+      padding: 9px;
+      color: #000;
+    }
+    .nav-link:hover, .nav-link:focus {
+    background-color:#FFF !important;
+    }
+  }
+}
+
+.navbar-top.not-home {
+  height: 40px;
+  background-color: #00BFA5;
+  .sign-in {
+    margin-top: 10px;
+    .nav-link {
+      font-size: 17px;
+      padding: 9px;
+      color: #ECECEC;
+    }
+    .nav-link:hover, .nav-link:focus {
+      color: #FFF !important;
+      background-color: #00BFA5 !important;
+      text-decoration: none;
+    }
+  }
+  .author-nav {
+    .nav-link {
+      background-color:#00BFA5 !important;
+      padding: 9px;
+      color: #FFF;
+    }
+    .nav-link:hover, .nav-link:focus {
+    background-color:#00BFA5 !important;
+    }
+  }
+}
+
+.navbar-bottom {
+  .navbar-brand {
+    font-family: medium-content-sans-serif-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    font-weight: bolder;
+     color: #55FFFFFF;
+    .light {
+      font-weight: 300;
+      color: $primary-color-text;
+    }
+  }
+  .navbar-brand:hover, .nav-link:focus {
+    color: #00BFA5 !important;
+  }
+  background-color: #00BFA5;
+  .navbar-left {
+    margin:0 auto;
+    display: block;
+    text-align: center;
+    .nav-link {
+      color: #E6E6E6;
+      font-size: 17px;
+      &.active {
+        color: #FFFFFF !important;
+        text-decoration: none;
+      }
+      margin: 10px;
+    }
+    .nav-link:hover, .nav-link:focus {
+      color: white !important;
+      background-color:#00BFA5 !important;
+      text-decoration: none;
+    }
+  }
+  .navbar-right {
+    margin:0 auto;
+    display: block;
+    .svgIcon {
+      margin: 10px;
+    }
+    .svgIcon:hover, .svgIcon:focus {
+      color: white !important;
+      background-color:#00BFA5 !important;
+      text-decoration: none;
+    }
+  }
+}
+
+
+.navbar-bottom.in-home {
+  margin-bottom: 0;
+  height: 80px;
+  .navbar-brand {
+    margin-top: 15px;
+  }
+  .navbar-left {
+    margin-top: 30px;
+  }
+  .navbar-right {
+    margin-top: 24px;
+  }
+}
+
+.navbar-bottom.not-home {
+  height: 40px;
+  margin-bottom: 0;
+  .navbar-brand {
+  }
+  .navbar-left {
+    margin-top: 15px;
+  }
+  .navbar-right {
+    margin-top: 10px;
+  }
+}
+.navbar {
+  // border: none;
+  // margin-bottom: 0;
+
+  // .navbar-toggler {
+  //   outline: none;  
+  // }
+
+  // .navbar-nav {
+  //   margin-top: 15px;
+  //   .nav-item {
+  //     > a:hover {
+  //       color: white !important;
+  //       background-color: transparent;
+  //     }
+  //     .nav-link {
+  //       
+  //       color: #ECECEC !important;
+  //       font-size: 17px;
+  //       
+  //     }
+  //   }
+  // }
+}
+
+.back_nav {
+  background-image: image-url('nav_background.jpg');
+  background-position: 42.142857142857146% 48.51485148514851% !important;
+  height: 600px;
+}
+// .nav-item.sign-in, .nav-item.sign-in:hover {
+//   a, a:hover {
+//     font-family: medium-content-sans-serif-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+//     letter-spacing: 0;
+//     font-weight: 400;
+//     font-style: normal;
+//     color: #00BFA5 !important;
+//     font-size: 15px;
+//   }
+// }
+// .nav-item.author-nav {
+//   padding-top: 0;
+//   margin-top: 0;
+//   img {
+//     height: 40px;
+//     weight: 40px;
+//     // border-radius: 50%;
+//     // border: 2px solid #00BFA5;
+//   }
+// }
+// .color-dropdown-in-home {
+//   height: 60px;
+//   background-color: #FFFFFF;
+//   .open .dropdown-toggle {
+//     background-color:#f8f8f8 !important;
+//   }
+// }
+// .color-dropdown-notin-home {
+//   background-color: #00BFA5;
+//   .open .dropdown-toggle {
+//     background-color:#00BFA5 !important;
+//   }
+// }

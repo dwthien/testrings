@@ -1,0 +1,108 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - '2017-11-30 08:09:46.708903'
+    - '2017-11-30 08:09:46.708903'
+
+---
+authors:
+  columns:
+  - id
+  - name
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - thien
+    - dwthien@gmail.com
+    - "$2a$11$01Kk0p5aN6o9YCkkp.BX1utrmzM8wyBzgrUdqpd9NgUSxNAUS6w9G"
+    - 
+    - 
+    - 
+    - 3
+    - '2017-12-04 03:07:04.920523'
+    - '2017-12-01 08:01:42.679384'
+    - 127.0.0.1
+    - 127.0.0.1
+    - '2017-12-01 07:38:44.808168'
+    - '2017-12-04 03:07:04.922158'
+
+---
+posts:
+  columns:
+  - id
+  - title
+  - body
+  - description
+  - slug
+  - created_at
+  - updated_at
+  - banner_image_url
+  - author_id
+  - published
+  - published_at
+  records: 
+  - - 3
+    - first
+    - asdasd
+    - ''
+    - first
+    - '2017-12-01 07:19:25.315472'
+    - '2017-12-01 10:52:35.973263'
+    - asdsadads
+    - 
+    - true
+    - 
+  - - 5
+    - Hello
+    - "<p><span style=\"color: #444444; font-family: Lato, sans-serif; font-size:
+      19.35px;\">Lorem ipsum do<em>lor amet neutra venmo ugh vexill</em>ologist shoreditch
+      cloud bread hexagon seitan<strong> cred lomo wolf</strong></span></p>\r\n<p><span
+      style=\"color: #444444; font-family: Lato, sans-serif; font-size: 19.35px;\"><strong><img
+      src=\"https://static.pexels.com/photos/692102/pexels-photo-692102.jpeg\" alt=\"helo\"
+      width=\"616\" height=\"411\" /></strong></span></p>\r\n<pre class=\"language-markup\"><code>45</code></pre>\r\n<p><span
+      style=\"color: #444444; font-family: Lato, sans-serif; font-size: 19.35px;\"><strong>selfies
+      mus</strong>tache. Cloud bread skateboard etsy cornhole subway tile taiyaki.
+      Succulents woke leggings pinterest yr viral.</span></p>\r\n<p>&nbsp;</p>\r\n<p><span
+      style=\"color: #444444; font-family: Lato, sans-serif; font-size: 19.35px;\">Taiyaki
+      copper mug cronut shoreditch activated charcoal direct trade craft beer. Raw
+      denim listicle single-origin coffee, tousled fam chia put a bird on it pinterest
+      drinking vinegar meggings unicorn tattooed bespoke ethical VHS. Gochujang seitan
+      lo-fi yuccie dreamcatcher.</span></p>"
+    - ''
+    - hello
+    - '2017-12-01 07:55:41.473399'
+    - '2017-12-04 02:53:27.247370'
+    - https://static.pexels.com/photos/125529/pexels-photo-125529.jpeg
+    - 1
+    - true
+    - '2017-12-04'
+  - - 6
+    - tesest
+    - ''
+    - ''
+    - tesest
+    - '2017-12-01 10:36:57.840535'
+    - '2017-12-04 02:53:30.175852'
+    - ''
+    - 1
+    - true
+    - '2017-12-04'
