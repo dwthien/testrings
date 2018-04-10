@@ -9,15 +9,26 @@
     <h1><%= @post.title %></h1>
     <h5><%= @post.display_day_published %></h5>
 
-    <img id="image" src="/1/untitled.1.jpg" width="640" height="410" />
+    <img id="image" src="/uploads/<%= @post.id%>/untitled.1.jpg" width="<%= @post.width%>" height="<%= @post.height%>" />
     <script>
-      $('#image').reel({
-        images:      '/1/untitled.#.jpg',
-        frames:      59,
-        loops:       true,
-        speed:       0.05,
-        cw:          true,
-        revolution:  100
+      $(function(){ // when DOM ready
+        var check = false;
+        $('#image').mouseover(function() {
+          if (check == false)
+          {
+            reel();
+            check = true;
+          }
+        });
+        var reel = function() {
+          $('#image').reel({
+            images:      '/uploads/<%= @post.id%>/untitled.#.jpg',
+            frames:      '<%= @post.frames%>',
+            loops:       true,
+            speed:       '<%= @post.speed%>',
+            cw:          true,
+          });
+        }
       });
     </script>
     <%= @post.body.html_safe %>

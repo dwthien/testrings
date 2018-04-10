@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171204104540) do
+ActiveRecord::Schema.define(version: 20180410094655) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -57,6 +57,12 @@ ActiveRecord::Schema.define(version: 20171204104540) do
     t.integer  "author_id"
     t.boolean  "published",        default: false
     t.datetime "published_at"
+    t.string   "image"
+    t.json     "attachments"
+    t.string   "width"
+    t.string   "height"
+    t.string   "frames"
+    t.string   "speed"
     t.index ["author_id"], name: "index_posts_on_author_id", using: :btree
     t.index ["slug"], name: "index_posts_on_slug", unique: true, using: :btree
   end

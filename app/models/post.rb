@@ -16,13 +16,15 @@
 #
 
 class Post < ApplicationRecord
+  mount_uploader :banner_image_url, ImageUploader
+  mount_uploaders :attachments, ImageUploader
+
   acts_as_taggable # Alias for acts_as_taggable_on :tags
   extend FriendlyId
   friendly_id :title, use: :slugged
-
   belongs_to :author
 
-  PER_PAGE = 2
+  PER_PAGE = 9
 
   scope :most_recent, -> { order(published_at: :desc) }
   scope :published, -> { where(published: true) }

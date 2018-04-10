@@ -33,15 +33,42 @@
           <li class="list-group-item">
             <div class="field">
               <%= f.label :banner_image_url %>
-              <%= f.text_field :banner_image_url, class: 'form-control' %>
+              <%= f.file_field :banner_image_url, class: 'form-control' %>
             </div>
           </li>
           <li class="list-group-item">
             <div class="field">
-              <%= f.label :description %>
-              <%= f.text_area :description, class: 'form-control' %>
+              <%= f.label :attachments %>
+              <%= f.file_field :attachments, multiple: true %>
             </div>
           </li>
+
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-xs-6">
+                <%= f.label :width %>
+                <%= f.text_field :width, class: 'form-control' %>
+              </div>
+              <div class="col-xs-6">
+                <%= f.label :height %>
+                <%= f.text_field :height, class: 'form-control' %>
+              </div>
+            </div>
+          </li>
+
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-xs-6">
+                <%= f.label :frames %>
+                <%= f.text_field :frames, class: 'form-control' %>
+              </div>
+              <div class="col-xs-6">
+                <%= f.label :speed %>
+                <%= f.text_field :speed, class: 'form-control' %>
+              </div>
+            </div>  
+          </li>
+
           <li class="list-group-item">
             <div class="field">
               <%= f.label 'Tags' %>
@@ -58,9 +85,9 @@
         </ul>
       </div>
       <% if @post.persisted?%>
-        <%= link_to 'Show', @post %> 
+        <%= link_to 'Show', @post, class: 'btn btn-sm btn-info' %> 
       <% end %>
-      <%= link_to 'Back', authors_posts_path %>
+      <%= link_to 'Back', authors_posts_path, class: 'btn btn-sm btn-info' %>
     </div>
 
     <div class="col-md-8">
