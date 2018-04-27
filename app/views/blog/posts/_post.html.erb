@@ -1,7 +1,16 @@
 <div class='col-lg-4'>
   <div class="card">
     <%= link_to post do %>
-      <div class="card-topper" style='background-image: url(<%= post.banner_image_url.url%>);'></div>
+      <img class="card-topper" id="image-bg-<%= post.id%>" src="/uploads/<%= post.id%>/untitled.1.jpg">
+        <script>
+          $(function(){
+            $('#image-bg-<%= post.id%>').reel({
+              images:      '/uploads/<%= post.id%>/untitled.#.jpg',
+              frames:      '<%= post.frames%>',
+              cw:          true,
+            });
+          });
+        </script>
     <% end %>
     <div class="card-block">
       <h4 class="card-title"><%= link_to post.title, post %></h4>
